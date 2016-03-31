@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Hello thymeleaf</title>
+</head>
+<body>
+<form action="/send" method="post" enctype="multipart/form-data">
+    <span th:text="${error}"/>
+    <span >Input compressed project:</span>
+    <input type="file" name="projectFile" value="Choose"/><br/>
+    <input type="submit" value="Send!"/>
+
+</form>
+</body>
+</html>
